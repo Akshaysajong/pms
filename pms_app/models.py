@@ -1,5 +1,8 @@
 from django.db import models
 
+
+
+
 class patient(models.Model):
     name=models.CharField(max_length=50,default="")
     phone_no=models.IntegerField(max_length=10,default="")
@@ -25,9 +28,9 @@ class Prescription(models.Model):
 class PatientFeedback(models.Model):
     patient_id=models.ForeignKey(patient, related_name = "patient",on_delete=models.PROTECT)
     feedback=models.CharField(max_length=500,default="")
-def __str__(self):
+    def __str__(self):
         return self.feedback
 class discussion(models.Model):
     discussion=models.CharField(max_length=500,default="")
-def __str__(self):
+    def __str__(self):
         return self.discussion

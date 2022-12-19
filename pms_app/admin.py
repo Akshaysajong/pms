@@ -5,4 +5,6 @@ admin.site.register(patient)
 admin.site.register(Doctor)
 admin.site.register(Nurse)
 admin.site.register(PatientFeedback)
-# Register your models here.
+# admin.site.register(foodtype)
+# admin.site.register(food)
+
